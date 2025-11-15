@@ -1,0 +1,27 @@
+GET http://localhost:4000/admin-api/test-admin
+
+###
+# POST http://localhost:4000/admin-api/create
+# Content-Type:application/json
+
+# {
+#  
+# }
+
+###
+GET http://localhost:4000/admin-api/list-of-users
+
+###
+GET http://localhost:4000/admin-api/list-of-authors
+
+###
+GET http://localhost:4000/admin-api/list-of-articles
+
+###
+DELETE http://localhost:4000/admin-api/delete-article/1750051485191
+
+###
+DELETE http://localhost:4000/admin-api/delete-user/test2
+
+###
+DELETE http://localhost:4000/admin-api/delete-author/test2

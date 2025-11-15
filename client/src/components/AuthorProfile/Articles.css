@@ -1,0 +1,11 @@
+.custom-card {
+  transition: all 0.3s ease; /* Smooth animation */
+  transform: scale(1);       /* Default size */
+  border: none;              /* No border initially */
+}
+
+.custom-card:hover {
+  border: 2px solid #000;    /* Black border on hover */
+  transform: scale(1.03);    /* Slightly enlarged */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+}

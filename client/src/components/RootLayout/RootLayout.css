@@ -1,0 +1,17 @@
+
+.dyn{
+    background-image: url('../../images/pexels-creative-vix-9754.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dynam{
+    background-color:rgba(0, 0, 0, 0.505)
+}
+.back{
+    background-color:rgba(255, 255, 255, 0.75);
+     color: #2F4F4F;
+}
+.back1{
+     background-color:rgba(0, 0, 0, 0.114)
+}

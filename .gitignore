@@ -1,0 +1,12 @@
+# Backend
+backend/node_modules/
+backend/.env
+
+# Frontend
+client/node_modules/
+client/build/
+client/.env
+
+# System
+.DS_Store
+.env

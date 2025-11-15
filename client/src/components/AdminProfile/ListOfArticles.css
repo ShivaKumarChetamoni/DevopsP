@@ -1,0 +1,11 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 600px; /* or whatever fits your content */
+  border-collapse: collapse;
+}

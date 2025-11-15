@@ -1,0 +1,34 @@
+###USER API REQS
+
+###USER register
+POST http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi",
+    "email":"ravi@mail.com"
+}
+###user login
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi"
+}
+###reading articles of all users
+GET http://localhost:4000/user-api/articles
+###
+
+POST http://localhost:4000/user-api/comment/1749898688923
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "comment":"amazing content"
+}
+
+

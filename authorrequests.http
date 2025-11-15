@@ -1,0 +1,68 @@
+POST http://localhost:4000/author-api/user
+Content-Type: application/json
+
+{
+    "userType":"author",
+    "username":"kiran",
+    "password":"kiran",
+    "email":"kiran@mail.com"
+}
+###
+POST http://localhost:4000/author-api/login
+Content-Type: application/json
+
+{
+    "userType":"author",
+    "username":"kiran",
+    "password":"kiran"
+}
+
+###add 
+POST http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"{{$timestamp}}",
+    "title":"Fundamentals of Java script",
+    "category":"programming",
+    "content":"JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).",
+    "dateOfCreation":"{{$datetime iso8601}}",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[],
+    "status":true
+}
+###update article
+PUT http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"1749729257",
+    "title":"Fundamentals of Java script",
+    "category":"programming",
+    "content":"JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. ",
+    "dateOfCreation":"2025-06-12T11:54:17.670Z",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[],
+    "status":true
+}
+
+###soft delete an article
+PUT http://localhost:4000/author-api/article/1749729257
+Content-Type: application/json
+
+{
+     "articleId":"1749729257",
+    "title":"Fundamentals of Java script",
+    "category":"programming",
+    "content":"JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. ",
+    "dateOfCreation":"2025-06-12T11:54:17.670Z",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"kiran",
+    "comments":[],
+    "status":true
+}
+
+###
+GET http://localhost:4000/author-api/articles/test1
